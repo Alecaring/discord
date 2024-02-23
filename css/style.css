@@ -3,29 +3,33 @@
     margin: 0;
     padding: 0;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background-color: #414eed;
+    
+}
+body{
+    background-color: #265ee9;
 }
 /* HEADER */
 header{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 90%;
-    margin-left: 5%;
-    background-color: #414eed;
+    width: 80%;
+    max-width: 1100px;
+    margin: 0 auto;
+    background-color: #265ee9;
     /* DEBUG */
    
 }
 header div{
     width: 20%;
-    /* DEBUG */
-    height: 100px;
+    height: 80px;
     
 }
 .logo-navbar{
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
+    padding-top: 10px;
 }
 .href{
     display: flex;
@@ -37,18 +41,20 @@ header div{
 }
 .href li{
     display: inline-block;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
     font-weight: bold;
+    
     
 }
 li a{
     text-decoration: none;
     color: white;
+    
 }
 .log-in-btn{
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     
 }
@@ -58,16 +64,27 @@ li a{
     padding: 10px 10px;
     font-weight: bold;
 }
+.banner-btn .fa-solid{
+    background-color: white;
+}
 /* BANNER */
 .section-banner{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: url(../img/jumbo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    max-width: 2000px;
+    margin: 0 auto;
+    
 }
 .banner{
     width: 60%;
-    margin-top: 100px;
-   
+    max-width: 1000px;
+    margin: 100px 0;
+   background-color: #23272a00;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -78,10 +95,13 @@ li a{
    
     text-align: center;
     font-size: 60px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     color: white;
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
+    background-color: #23272a00;
+    font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
     /* DEBUG */
    
     
@@ -90,13 +110,18 @@ li a{
     text-align: center;
     font-size: 25px;
     color: white;
-    font-weight: bold;
+    background-color: #23272a00;
+    
+  
+  
     
     /* DEBUG */
 }
 .banner-btn{
     display: flex;
     justify-content: space-between;
+    background-color: #23272a00;
+    
     
 }
 .banner-btn span{
@@ -123,59 +148,196 @@ li a{
     justify-content: center;
     width: 100%;
     background-color: white;
-   
-    height: 600px;
+    margin: 0 auto;
+    padding: 100px 0 100px 0;
 }
+.first-disclamer-contenitor .second-section,
+.second-disclamer-contenitor .second-section,
+.third-disclamer-contenitor .second-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: white;
+    color: black;
+    padding: 0 80px;
+}
+.first-disclamer-contenitor .first-section,
+.second-disclamer-contenitor .first-section,
+.third-disclamer-contenitor .first-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section>.first-disclamer-contenitor img{
+    max-width: 100%;
+    background-color: white;
+}
+section>.first-disclamer-contenitor h2{
+    font-size: 40px;
+    margin-bottom: 30px;
+    background-color: #fff;
+}
+section>.first-disclamer-contenitor p{
+    font-size: 24px;
+    background-color: #fff;
+}
+
 .second-disclamer-contenitor{
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
+    margin: 0 auto;
     background-color: rgb(235, 235, 235);
-    
-    height: 600px;
+    padding: 100px 0 100px 0;
+}
+section>.second-disclamer-contenitor img{
+    max-width: 100%;
+    background-color: rgb(235, 235, 235);
+
+}
+section>.second-disclamer-contenitor h2{
+    font-size: 40px;
+    margin-bottom: 30px;
+    background-color: rgb(235, 235, 235);
+}
+section>.second-disclamer-contenitor p{
+    font-size: 24px;
+    background-color: rgb(235, 235, 235);
+}
+.second-disclamer-contenitor .second-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: black;
+    background-color: rgb(235, 235, 235);
 }
 .third-disclamer-contenitor{
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
+    margin: 0 auto;
+
     background-color: rgb(255, 255, 255);
     
-    height: 600px;
+    padding: 100px 0 100px 0;
 }
+section>.third-disclamer-contenitor img{
+    max-width: 100%;
+    max-height: 100%;
+    background-color: white;
+}
+section>.third-disclamer-contenitor h2{
+    font-size: 40px;
+    margin-bottom: 30px;
+    background-color: #fff;
+}
+section>.third-disclamer-contenitor p{
+    font-size: 24px;
+    background-color: #fff;
+}
+
+.fourth-disclamer-contenitor{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+   
+    text-align: center;
+    background-color: rgb(235, 235, 235);
+    padding: 382px 0 199px 0;
+    
+}
+section>.fourth-disclamer-contenitor img{
+    width: 1200px;
+    
+   
+}
+section>.fourth-disclamer-contenitor h2{
+    font-size: 40px;
+    margin-bottom: 30px;
+    font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+    
+}
+section>.fourth-disclamer-contenitor p{
+    font-size: 24px;
+}
+.fourth-disclamer-contenitor-btn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/stars.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    margin: 70px 0 200px 0;
+}
+.fourth-disclamer-contenitor span{
+    background-color: #265ee9;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 30px;
+    font-size: 20px;
+}
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .container{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 60%;
+    width: 100%;
+    max-width: 1200px;
     height: 400px;
-    border: 1px solid black;
-    background-color: rgb(151, 84, 84);
+    
+   
+    
     
 }
-.fourth-disclamer-contenitor{
+.container-column{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
-    background-color: rgb(235, 235, 235);
-    
-    height: 900px;
+    max-width: 1200px;
+    height: 700px;
 }
 
 
 .first-section{
     width: 50%;
     height: 400px;
-    background-color: aqua;
+    
+    
 }
 .second-section{
     width: 50%;
     height: 400px;
-    background-color: rgb(0, 255, 85);
+    
 }
 footer{
     display: flex;
@@ -184,25 +346,68 @@ footer{
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    height: 800px;
+    
     background-color: #23272a;
 }
 .grow{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-right: 100px;
     flex-grow: 1;
+}
+.grow-top{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 20px;
+    margin-left: 20px;
+    align-items: center;
+    padding-bottom: 10px;
+}
+.grow-top img{
+    width: 30px;
+}
+.grow-top #it{
+    padding-left: 10px;
+    color: white;
+    
+}
+.grow-bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+.grow i{
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+
 }
 footer div{
     width: calc(100% / 6);
-    height: 400px;
+    max-width: 1200px;
     text-align: center;
-    border: 10px solid white;
     
-    background-color: #587d99;
+    background-color: #23272a; 
+}
+
+.footer-href li{
+    text-align: start;
+    list-style: none;
+    margin-bottom: 10px;
+}
+.footer-href .blu{
+    color: #265ee9;
+    margin-bottom: 20px;
 }
 .contenitor-footer{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     margin-top: 60px;
-    width: 70%;
+    width: 90%;
     height: 400px;
     
 }
@@ -210,11 +415,21 @@ footer div{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 70%;
-    height: 100px;
+    width: 90%;
+    padding: 43px 0;
+    border-top: 1px solid #265ee9;
+
 
 
 }
-.bottom-footer{
-    
+.contenitor-bottom-footer img{
+    padding-top: 10px;
+}
+.signup-btn{
+    background-color: #414eed;
+    border-radius: 20px;
+    padding: 10px 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
 }
