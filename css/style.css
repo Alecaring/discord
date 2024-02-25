@@ -64,6 +64,10 @@ li a{
     padding: 10px 10px;
     font-weight: bold;
 }
+.log-in-btn a{
+    text-decoration: none;
+    color: black;
+}
 .banner-btn .fa-solid{
     background-color: white;
 }
@@ -111,18 +115,10 @@ li a{
     font-size: 25px;
     color: white;
     background-color: #23272a00;
-    
-  
-  
-    
-    /* DEBUG */
 }
 .banner-btn{
     display: flex;
     justify-content: space-between;
-    background-color: #23272a00;
-    
-    
 }
 .banner-btn span{
     display: inline-block;
@@ -133,8 +129,18 @@ li a{
     font-weight: bold;
 
 }
+#download-discord{
+    background-color: white;
+}
+#download-discord a{
+    text-decoration: none;
+    color: black;
+}
 #brows-discord{
     background-color: black;
+}
+#brows-discord a{
+    text-decoration: none;
     color: white;
 }
 
@@ -259,7 +265,7 @@ section>.fourth-disclamer-contenitor img{
 }
 section>.fourth-disclamer-contenitor h2{
     font-size: 40px;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
     font-family: "Roboto Slab", serif;
   font-optical-sizing: auto;
   font-weight: 900;
@@ -287,7 +293,9 @@ section>.fourth-disclamer-contenitor p{
     border-radius: 30px;
     font-size: 20px;
 }
-    
+.fourth-disclamer-contenitor a{
+    text-decoration: none;
+}
 
 
 
@@ -424,6 +432,10 @@ footer div{
 }
 .contenitor-bottom-footer img{
     padding-top: 10px;
+}
+.contenitor-bottom-footer a{
+    text-decoration: none;
+    color: white;
 }
 .signup-btn{
     background-color: #414eed;
